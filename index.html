@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TastyBite | Recipe Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Tasty<span>Bite</span></h1>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content container">
+      <h2>Discover Delicious Meals</h2>
+      <p>Healthy, Quick, and Mouth-Watering!</p>
+    </div>
+  </section>
+
+  <section class="filter-section container">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+    <button class="filter-btn" data-filter="lunch">Lunch</button>
+    <button class="filter-btn" data-filter="dessert">Dessert</button>
+  </section>
+
+  <section class="gallery container">
+    <!-- Recipe Card 1 -->
+    <div class="card" data-category="breakfast">
+    <img src="https://i.pinimg.com/736x/97/de/2c/97de2c43981b8730fc14eded6f1a73c7.jpg" alt="Fluffy Pancakes" />
+      <div class="card-body">
+        <h3>Fluffy Pancakes</h3>
+        <p>Classic breakfast pancakes topped with fresh berries and honey.</p>
+        <div class="price-cart">
+            <span class="price">$$$</span>
+            <button class="add-btn">Add to Bag</button>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Recipe Card 2 -->
+    <div class="card" data-category="lunch">
+      <img src="https://i.pinimg.com/736x/fd/0e/59/fd0e595449558fb00f9bb779b2972965.jpg"alt="Pizza" />
+      <div class="card-body">
+        <h3>Hot Cheesy Pepperoni Pizza</P></h3>
+        <p>Hot, cheesy pepperoni pizza just out of the oven, with bubbling mozzarella and crispy crust</p>
+      <div class="price-cart">
+            <span class="price">$$$</span>
+            <button class="add-btn">Add to Bag</button>
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- Recipe Card 3 -->
+    <div class="card" data-category="dessert">
+      <img src="https://i.pinimg.com/1200x/3f/66/34/3f6634358e9d45bab426709762600450.jpg" alt="Brownie" />
+      <div class="card-body">
+        <h3>Chocolate Brownie</h3>
+        <p>Warm chocolate Brownie  with molten chocolate center.</p>
+      <div class="price-cart">
+            <span class="price">$$$</span>
+            <button class="add-btn">Add to Bag</button>
+        </div>
+    </div>
+    </div>
+
+    <!-- Recipe Card 4 -->
+    <div class="card" data-category="lunch">
+      <img src="https://i.pinimg.com/736x/b0/7c/5c/b07c5c5d06caafd28297fbf48ce821a9.jpg" alt="pasta" />
+      <div class="card-body">
+        <h3>Tomato Zucchini Pasta</h3>
+        <p>Healthy Tomato Zucchini Pasta: A quick, 30-minute vegetarian meal featuring fresh zucchini, cherry tomatoes, garlic, and basil. Perfect for busy weeknights!.</p>
+        <div class="price-cart">
+            <span class="price">$$$</span>
+            <button class="add-btn">Add to Bag</button>
+        </div>
+    </div>
+    </div>
+
+    <!-- Recipe Card 5 -->
+    <div class="card" data-category="dessert">
+      <img src="https://i.pinimg.com/1200x/24/1f/40/241f40cdb81ee38b3d1e87a593c5ace7.jpg" alt="Tiramisu" />
+      <div class="card-body">
+        <h3>Classic Tiramisu</h3>
+        <p>Indulge in a timeless tiramisu that melts in your mouth. Enjoy the perfect balance of mascarpone and espresso-soaked ladyfingers for an elegant dessert. Try this classic recipe today and impress your guests! classic tiramisu, tiramisu recette facile, italian recipes, cuisine facile, tiramisu dessert, original recipe</p>
+       <div class="price-cart">
+            <span class="price">$$$</span>
+            <button class="add-btn">Add to Bag</button>
+        </div>
+    </div>
+    </div>
+
+    <!--recipe card 6-->
+    <div class="card" data-category="dessert">
+      <img src="https://i.pinimg.com/1200x/48/43/32/484332b8f7b62780aa79466a7e29a7bb.jpg" alt="Bread" />
+      <div class="card-body">
+        <h3>Cheesy Garlic Bread</h3>
+        <p>This Cheesy Garlic Bread is the ultimate side dish—crispy on the outside, soft on the inside, and loaded with melted cheese and savory garlic butter. Perfect for serving with pasta, soups, or as a crowd-pleasing appetizer!</p>
+      <div class="price-cart">
+            <span class="price">$$$</span>
+            <button class="add-btn">Add to Bag</button>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2025 TastyBite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
