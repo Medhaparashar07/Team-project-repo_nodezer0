@@ -1,22 +1,32 @@
-// Simple filter function for categories
-const filterButtons = document.querySelectorAll(".filter-btn");
-const cards = document.querySelectorAll(".card");
+// Page switching logic
+const buttons = document.querySelectorAll('.nav-btn');
+const pages = document.querySelectorAll('.page');
+const navLinks = document.getElementById('nav-links');
+const toggleBtn = document.getElementById('menu-toggle');
 
-filterButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    // Remove active class from all
-    filterButtons.forEach(btn => btn.classList.remove("active"));
-    button.classList.add("active");
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    buttons.forEach(b => b.classList.remove('active'));
+    pages.forEach(p => p.classList.remove('active'));
 
-    const filter = button.getAttribute("data-filter");
+    btn.classList.add('active');
+    const target = btn.getAttribute('data-target');
+    document.getElementById(target).classList.add('active');
 
-    cards.forEach(card => {
-      const category = card.getAttribute("data-category");
-      if (filter === "all" || category === filter) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-    });
+    // Close mobile menu when clicked
+    navLinks.classList.remove('show');
+  });
+});
+
+// Mobile menu toggle
+toggleBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+// Add to cart alert
+const cartButtons = document.querySelectorAll('.cart-btn');
+cartButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    alert('Item added to cart!');
   });
 });

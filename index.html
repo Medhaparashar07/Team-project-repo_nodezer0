@@ -1,126 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TastyBite | Recipe Gallery</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="container nav-container">
-      <h1 class="logo">Tasty<span>Bite</span></h1>
-      <nav class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <header>
+       
+        <nav class="navbar">
+            <div class="logo">MINI ONLINE STORE</div>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
+                <li> <a href="#" class="nav-btn active" data-target="home">HOME</a></li>
+                <li><a href="#" class="nav-btn" data-target="about">ABOUT</a></li>
+                <li><a href="#" class="nav-btn" data-target="login">LOGIN</a></li>
+                       </ul>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <div class="hero-content container">
-      <h2>Discover Delicious Meals</h2>
-      <p>Healthy, Quick, and Mouth-Watering!</p>
-    </div>
-  </section>
+    <section id="home" class="page active" >
+<h1>Welcome to Mini Online Store</h1>
+<p class="intro-text">  
+     Explore a world of quality products — from fashion to electronics — all in one place.  
+      We bring you the best deals, trendy items, and easy shopping experience right from your browser.
 
-  <section class="filter-section container">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="breakfast">Breakfast</button>
-    <button class="filter-btn" data-filter="lunch">Lunch</button>
-    <button class="filter-btn" data-filter="dessert">Dessert</button>
-  </section>
+</p>
 
-  <section class="gallery container">
-    <!-- Recipe Card 1 -->
-    <div class="card" data-category="breakfast">
-    <img src="https://i.pinimg.com/736x/97/de/2c/97de2c43981b8730fc14eded6f1a73c7.jpg" alt="Fluffy Pancakes" />
-      <div class="card-body">
-        <h3>Fluffy Pancakes</h3>
-        <p>Classic breakfast pancakes topped with fresh berries and honey.</p>
-        <div class="price-cart">
-            <span class="price">$$$</span>
-            <button class="add-btn">Add to Bag</button>
-        </div>
+<h2>Our Featured Products</h2>
+<div class="product-container">
+    <div class="product-card">
+        <img src="https://i.pinimg.com/736x/ef/bb/17/efbb17fc0cfc2be91f2c913c66676a5f.jpg" alt="Smart Watch">
+        <h3>Smart Watch</h3>
+        <p>Track your fitness goals and stay connected</p>
+        <p class="price">$44.99</p>
+        <button class="card-btn">Add to Cart</button>
     </div>
 
+     <div class="product-card">
+        <img src="https://i.pinimg.com/736x/9c/b7/3a/9cb73a1ac2025987269327e28d5d368e.jpg" alt="Calculator">
+        <h3>Calculator</h3>
+        <p>Track your A handy tool that makes solving numbers quick and easy.</p>
+        <p class="price">$44.99</p>
+        <button class="card-btn">Add to Cart</button>
     </div>
 
-    <!-- Recipe Card 2 -->
-    <div class="card" data-category="lunch">
-      <img src="https://i.pinimg.com/736x/fd/0e/59/fd0e595449558fb00f9bb779b2972965.jpg"alt="Pizza" />
-      <div class="card-body">
-        <h3>Hot Cheesy Pepperoni Pizza</P></h3>
-        <p>Hot, cheesy pepperoni pizza just out of the oven, with bubbling mozzarella and crispy crust</p>
-      <div class="price-cart">
-            <span class="price">$$$</span>
-            <button class="add-btn">Add to Bag</button>
-        </div>
+     <div class="product-card">
+        <img src="https://i.pinimg.com/1200x/ef/39/bd/ef39bdd0d4b4dfbd2f05dc54bc65ae7f.jpg" alt="Digital Camera">
+        <h3>Digital Camera</h3>
+        <p>Captures moments beautifully and turns memories into timeless pictures.</p>
+        <p class="price">$44.99</p>
+        <button class="card-btn">Add to Cart</button>
     </div>
 
 
+     <div class="product-card">
+        <img src="https://i.pinimg.com/1200x/d3/0f/2e/d30f2e650ce8bbf539478f3d5b732e62.jpg" alt="Guitar">
+        <h3>Guitar</h3>
+        <p>A stringed soul that speaks the language of music and emotion.</p>
+        <p class="price">$44.99</p>
+        <button class="card-btn">Add to Cart</button>
     </div>
 
-    <!-- Recipe Card 3 -->
-    <div class="card" data-category="dessert">
-      <img src="https://i.pinimg.com/1200x/3f/66/34/3f6634358e9d45bab426709762600450.jpg" alt="Brownie" />
-      <div class="card-body">
-        <h3>Chocolate Brownie</h3>
-        <p>Warm chocolate Brownie  with molten chocolate center.</p>
-      <div class="price-cart">
-            <span class="price">$$$</span>
-            <button class="add-btn">Add to Bag</button>
-        </div>
-    </div>
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/bc/ff/26/bcff268f9a66a6c323c5162a9c626dd7.jpg" alt="Table Lamp">
+        <h3>Table Lamp</h3>
+        <p>A warm light that brightens your workspace and inspires focus.</p>
+        <p class="price">$44.99</p>
+        <button class="card-btn">Add to Cart</button>
     </div>
 
-    <!-- Recipe Card 4 -->
-    <div class="card" data-category="lunch">
-      <img src="https://i.pinimg.com/736x/b0/7c/5c/b07c5c5d06caafd28297fbf48ce821a9.jpg" alt="pasta" />
-      <div class="card-body">
-        <h3>Tomato Zucchini Pasta</h3>
-        <p>Healthy Tomato Zucchini Pasta: A quick, 30-minute vegetarian meal featuring fresh zucchini, cherry tomatoes, garlic, and basil. Perfect for busy weeknights!.</p>
-        <div class="price-cart">
-            <span class="price">$$$</span>
-            <button class="add-btn">Add to Bag</button>
-        </div>
+
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/21/32/37/21323765119fafe5a83a7f86e117d780.jpg" alt="Phone Case">
+        <h3>Phone Case</h3>
+        <p>Protects your phone while adding a touch of style and personality.</p>
+        <p class="price">$44.99</p>
+        <button class="card-btn">Add to Cart</button>
     </div>
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/59/4c/8d/594c8d77d6c1cd31925ee5b284bafae4.jpg" alt="Leather Bag">
+        <h3>Leather Bag</h3>
+        <p>Stylish and durable, perfect for carrying essentials with elegance.</p>
+        <p class="price">$44.99</p>
+        <button class="card-btn">Add to Cart</button>
     </div>
 
-    <!-- Recipe Card 5 -->
-    <div class="card" data-category="dessert">
-      <img src="https://i.pinimg.com/1200x/24/1f/40/241f40cdb81ee38b3d1e87a593c5ace7.jpg" alt="Tiramisu" />
-      <div class="card-body">
-        <h3>Classic Tiramisu</h3>
-        <p>Indulge in a timeless tiramisu that melts in your mouth. Enjoy the perfect balance of mascarpone and espresso-soaked ladyfingers for an elegant dessert. Try this classic recipe today and impress your guests! classic tiramisu, tiramisu recette facile, italian recipes, cuisine facile, tiramisu dessert, original recipe</p>
-       <div class="price-cart">
-            <span class="price">$$$</span>
-            <button class="add-btn">Add to Bag</button>
-        </div>
-    </div>
+      <div class="product-card">
+        <img src="https://i.pinimg.com/1200x/e8/e6/22/e8e6226882293fc7c3451b307a9f0135.jpg" alt="Steel Water Bottle">
+        <h3>Steel Water Bottle</h3>
+        <p>Keeps your drink fresh, eco-friendly, and perfect for everyday use.</p>
+        <p class="price">$44.99</p>
+        <button class="card-btn">Add to Cart</button>
     </div>
 
-    <!--recipe card 6-->
-    <div class="card" data-category="dessert">
-      <img src="https://i.pinimg.com/1200x/48/43/32/484332b8f7b62780aa79466a7e29a7bb.jpg" alt="Bread" />
-      <div class="card-body">
-        <h3>Cheesy Garlic Bread</h3>
-        <p>This Cheesy Garlic Bread is the ultimate side dish—crispy on the outside, soft on the inside, and loaded with melted cheese and savory garlic butter. Perfect for serving with pasta, soups, or as a crowd-pleasing appetizer!</p>
-      <div class="price-cart">
-            <span class="price">$$$</span>
-            <button class="add-btn">Add to Bag</button>
-        </div>
+      <div class="product-card">
+        <img src="https://i.pinimg.com/1200x/de/94/bd/de94bdfe676a9826a945a5ace0a63b32.jpg" alt="Trolley Bag">
+        <h3>Trolley Bag</h3>
+        <p>Your best travel partner — easy to roll, strong, and spacious.</p>
+        <p class="price">$44.99</p>
+        <button class="card-btn">Add to Cart</button>
     </div>
-    </div>
-  </section>
 
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2025 TastyBite. All rights reserved.</p>
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/8a/5e/78/8a5e78856db96345ca553e6a52c720d2.jpg" alt="Mirror">
+        <h3>Mirror</h3>
+        <p>A mirror reflects your true self — clear, bright, and honest.</p>
+        <p class="price">$44.99</p>
+        <button class="card-btn">Add to Cart</button>
     </div>
-  </footer>
+</div>
+</section>
 
-  <script src="js/script.js"></script>
+<!-- about page -->
+<section id="about" class="page">
+  <h1>About Us</h1>
+  <p>
+    Welcome to <strong>Mini Online Store</strong> — your one-stop destination for trendy, affordable, and high-quality products.  
+    Our goal is to make online shopping simple, fast, and enjoyable.  
+    From electronics to accessories, we bring you handpicked collections to suit every taste.  
+    <br><br>
+    At Mini Online Store, we believe shopping should be more than just buying — it should be an experience.  
+    With our user-friendly interface, secure payment options, and quick delivery, we aim to make your online journey smooth and satisfying.  
+    Whether you're looking for daily essentials or the latest tech gadgets, we’ve got you covered!  
+    <br><br>
+    <strong>Our Mission:</strong> To make online shopping accessible, enjoyable, and trustworthy for everyone.
+  </p>
+</section>
+
+
+ <!-- login page -->
+
+ <section id="login" class="page">
+    <h1>Login to Your Account</h1>
+    <form class="login-form">
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required>
+        <label>Password:</label>
+        <!-- <input type="email" placeholder="Enter your email" required> -->
+        <input type="password" placeholder="Enter your password" required>
+        <button type="submit">Login</button>
+        <p class="note">Do not have an account? <a href="#">Sign up</a></p></p>
+    </form>
+ </section>
+
+ <!-- footer -->
+  <footer> 
+    <p>&copy; 2025 Mini Online Store</p>
+</footer>
+<script src="script.js"></script>
+ 
 </body>
 </html>
