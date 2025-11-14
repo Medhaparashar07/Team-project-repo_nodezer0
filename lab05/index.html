@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Book Explorer</div>
+
+            <ul class="nav-links" id="navlinks">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('login')">Login</a></li>
+            </ul>
+
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="page active">
+        <h1 class="main-heading">Discover Your Next Favorite Book</h1>
+        <p class="sub-heading">Explore summaries, reviews, and book collections in one cozy place.</p>
+
+        <button class="cta-btn">Start Exploring</button>
+
+    
+
+        <div class="book-examples">
+            <div class="book-card">
+                <img src="https://i.pinimg.com/736x/fb/e0/c8/fbe0c8b689905ac2c7197a860c662ef7.jpg" alt="Book 1">
+                <h3>Harry Potter</h3>
+                <p>AUTHOR - J.K. ROWLING</p>
+                <h4>The novels chronicle the lives of a young wizard, Harry Potter, and his friends, Ron Weasley and Hermione Granger, all of whom are students at Hogwarts School of Witchcraft and Wizardry.</h4>
+            </div>
+
+            <div class="book-card">
+                <img src="https://i.pinimg.com/736x/6a/49/93/6a49939fed4981b569923d79f314771e.jpg" alt="Book 2">
+               <h3>A Song of Ice and Fire</h3>
+                <p>AUTHOR -  GEORGE R.R. MARTIN</p>
+                <h4>A Song of Ice and Fire depicts a violent world dominated by political realism. What little supernatural power exists is confined to the margins of the known world.</h4>
+            </div>
+
+            <div class="book-card">
+                <img src="https://i.pinimg.com/736x/e7/de/3b/e7de3ba07556c8b4efe112bbbeb4fd99.jpg" alt="Book 3">
+                <h3>The Chronicles of Narnia</h3>
+                <p>AUTHOR - C.S. LEWIS</p>
+              <h4>The series is set in the fictional realm of Narnia, a fantasy world of magic, mythical beasts, and talking animals. It narrates the adventures of various children who play central roles in the unfolding history of the Narnian world></h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT PAGE -->
+    <section id="about" class="page">
+        <div class="about-image">
+            <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="Book Illustration">
+        </div>
+
+        <h1>📚 About Book Explorer 📚</h1>
+
+        <p>
+            Book Explorer is your cozy corner to discover, review, and enjoy books.
+            From thrilling mysteries to heartwarming stories, explore a world of literature in one place.
+        </p>
+
+        <p>
+            Whether you're a casual reader or a bookworm, Book Explorer helps you:
+        </p>
+
+        <ul>
+            <li>📖 Find summaries and reviews for books you love.</li>
+            <li>📝 Keep a personal reading list.</li>
+            <li>💡 Discover new authors and genres.</li>
+            <li>💬 Connect with other book enthusiasts.</li>
+        </ul>
+
+        <p>
+            Your next adventure awaits in the pages of a book! Start exploring now.
+        </p>
+
+        <!-- Optional Gallery -->
+        <div class="about-gallery">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Books 1">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Books 2">
+            <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Books 3">
+        </div>
+    </section>
+
+    <!-- LOGIN PAGE -->
+    <section id="login" class="page">
+        <div class="login-container">
+            <h1>Login / Sign Up</h1>
+
+            <form class="login-form">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="login-btn">Login</button>
+
+                <p class="signup-text">
+                    New here? <a href="#">Sign Up</a>
+                </p>
+
+                <button class="enquiry-btn">For enquiry, contact 921xxxxxxx</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
